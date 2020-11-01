@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.loader{
+    width:100%;
+    height: 100%;
+    background:white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:1000;
+
+}
+.loader .inner{
+    width:100%;
+    height:100%;
+    background: url("../img/loader.gif") center center no-repeat;
+}
+.overlay{
+    height: 100%;
+    width:100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 3;
+}
+.slides-navigation{
+    z-index: 6;
+}
+.slides-navigation .prev,
+.slides-navigation .next{
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+}
+.titleMessage{
+    position: absolute;
+    width: 100%;
+    height:250px;
+    z-index: 5;
+    top:5%;
+    left: 25%;
+}
+.titleMessage .heading p{
+    color: black;
+    letter-spacing: 7px;
+}
+.titleMessage .heading p.main{
+    font-size: 50px;
+    font-weight: 100px;
+}
+.titleMessage .heading p.sub{
+    font-size: 25px;
+}
+.slides-navigation a.next{
+    right: 20px;
+    background-image: url(../img/icons/next.png);
+}
+.slids-navigation a.prev{
+    left: 20px;
+    background-image: url(../img/icons/prev.png);
+}
+.section{
+    padding: 100px 0;
+}
+.navbar-toggler-icon{
+    background: url("../img/icons/menu.png");
+    background-size:cover;
+}
+#navigation{
+    background: #e74c3c;
+    padding: 20px 10px;
+    
+}
+#navigation li{
+    padding: 0 10px;
+}
+#navigation li a{
+    color:white;
+}
+.navbar-brand, .navbar-brand:hover {
+    color: white;
+}
+.skillsSection{
+    background: #e74c3c;
+    color: #fff;
+}
+ 
+.chart{
+    position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block; 
+}
+.chart canvas{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.chart .percent{
+    color: black;
+    font-size: 35px;
+    line-height: 152px;
+}
+.chart .percent:after{
+    content: '%';
+}
+.squareItem{
+    position: relative;
+}
+.squareInnerContainer{
+    border: 2px solid black;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border-top: none;
+}
+.squareInnerContainer:before,
+.squareInnerContainer:after{
+    content: '';
+    border-bottom: 2px solid black;position: absolute;width: 30%;top: 0;
+}
+.squareInnerContainer:before{
+    right: 0;
+}
+.squareInnerContainer:after{
+    left: 0;
+}
+.squareIcon{
+    position: absolute;left: 40%;top: -30px; font-size: 45px;
+}
+.squareContent h2{
+    color: red;
+}
+.squareContent p{
+    font-size: 14px;
+}
+.contuctdesign{
+    background:  #e74c3c;
+    padding: 70px 0;
+    margin: 0;
+}
+.maincount {
+    width:1200px;
+    margin: 100px auto;
+    background: #4caf50;
+
+    color: #ffff;
+    overflow: hidden;
+}
+.single-counter{
+    width:25%;
+    float:left;
+    color:#fff;
+    text-align: center;
+    font-size: 30px;
+    padding: 50px 0px;
+    margin: 0px;
+}
+.single-counter p{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;    
+    margin-bottom: 0;
+}
+.heading{
+    text-align: center;
+}
+.filter{
+    text-align: center;
+}
+.filter li{
+    display: inline-block;
+    padding: 5px;
+}
+.filter li a{
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+.filter .current {
+    background: red;
+    color: white;
+}
+.itemsContainer{
+    width: 100%;
+}
+.items li{
+    display: inline-block;
+    padding: 5px;
+}
+.items .icons{
+    position: absolute;
+    width:90px;
+    height:40px;
+    margin: -20px auto 0 -45px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    z-index: 5;
+}
+.items a{
+    background: red;
+    color: white;
+    height: 40px;
+    width: 40px;
+    display: inline-block; 
+    position: relative;
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 0.2s linear, 1s;
+}
+.items .imgOverlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.items .imgOverlay:hover{
+    opacity: 1;
+    transition: all 0.2s linear, 1s;
+}
+.items .searchButton{
+    float: left;
+    left: -200px;
+}
+.items .projectlink{
+    float: right;
+    right: -200px;
+}
+.items .item{
+    position: relative;
+    overflow: hidden;
+}
+.items .item:hover .searchButton{
+    left:0;
+}
+.items .item:hover .projectlink{
+    right:0;
+}
+.items .item:hover img{
+    transform: scale(1.05, 1.05);
+    transition: all 0.2s linear, 1s;
+}
+.items{
+    padding:0;
+}
